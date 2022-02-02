@@ -1,0 +1,34 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr class="row">
+        <td class="col-1">GEnnaio</td>
+        <td class="col-1">Febbraio</td>
+        <td class="col-1">Marzo</td>
+        <td class="col-1">Aprile</td>
+        <td class="col-1">Maggio</td>
+        <td class="col-1">GIugno</td>
+        <td class="col-1">Luglio</td>
+        <td class="col-1">Agosto</td>
+        <td class="col-1">Settembre</td>
+        <td class="col-1">Ottobre</td>
+        <td class="col-1">Novembre</td>
+        <td class="col-1">Dicembre</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row">
+        <td class="col-1 " *ngFor="let item of listaMesi, index as i">
+           <tr>
+            {{item.documenti}} <small>doc.</small>{{item.id}}
+           </tr>
+           <tr>
+             {{item.importo}} &euro;
+           </tr>
+           <div id="btn" (click)="whenClicked[i]=!whenClicked[i]" [style.background-color]="whenClicked[i]  ? 'blue' : ''"></div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
