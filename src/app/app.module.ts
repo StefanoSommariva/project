@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaMesiComponent } from './lista-mesi/lista-mesi.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ChartComponent } from './chart/chart.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaMesiComponent
+    ListaMesiComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

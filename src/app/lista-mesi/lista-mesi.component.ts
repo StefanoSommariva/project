@@ -4,6 +4,7 @@ import { Andamento } from '../classes/andamento';
 import { MesiData } from '../classes/mesi-data';
 import { AndamentoService } from '../services/andamento.service';
 
+
 @Component({
   selector: 'app-lista-mesi',
   templateUrl: './lista-mesi.component.html',
